@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour {    //hi, can you see the change that I make it here?
     public float speed;
     private Rigidbody2D player;
     private Vector3 larmeMovement;
