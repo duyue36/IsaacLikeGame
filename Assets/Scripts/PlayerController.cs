@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {    //hi, can you see the change 
         player = GetComponent<Rigidbody2D>();
 
         rightTurn = true;
-        offsetLarmePosition.Set(0.0f, 0.5f, 0.0f);
+        offsetLarmePosition.Set(0.0f, 0.3f, 0.0f);
 
     }
 	

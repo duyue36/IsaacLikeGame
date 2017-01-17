@@ -9,7 +9,7 @@ public class LarmeController : MonoBehaviour {
 
     public GameObject enemy;
     public Transform enemyPos;
-    public float smoothing = 1f;
+    //public float smoothing = 1f;
 
     Rigidbody2D larme;
     private bool enemyExist;
@@ -26,14 +26,15 @@ public class LarmeController : MonoBehaviour {
         
 
 
-        OnTriggerEnter2D(enemyCollider);
+        
 
     }
 	
 	// Update is called once per frame
 	void Update () {
         LarmeMove();
-	}
+        OnTriggerEnter2D(enemyCollider);
+    }
 
     void LarmeMove()
     {
@@ -47,7 +48,7 @@ public class LarmeController : MonoBehaviour {
         //larme.MovePosition(transform.position + larmeMovement);
 
         if(enemyExist)
-            larme.position = Vector3.Lerp(transform.position, enemyPos.position, smoothing * Time.deltaTime);
+            larme.position = Vector3.Lerp(transform.position, enemyPos.position, speed * Time.deltaTime);
         else
             larme.MovePosition(transform.position + larmeMovement);  // Move the player to it's current position plus the movement.
 
