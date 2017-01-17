@@ -13,25 +13,29 @@ public class IssacController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.UpArrow))
+		if(Input.GetKey(KeyCode.W))
         {
             m_animator.SetTrigger("Walkup");
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             m_animator.SetTrigger("Walkdown");
             m_animator.SetTrigger("Blink");
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.A))
+        {
+            m_animator.SetTrigger("WalkLeft");
+           
+        }
+       
+
+        if (Input.GetKey(KeyCode.D))
         {
             m_animator.SetTrigger("WalkRight");
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            m_animator.SetTrigger("WalkLeft");
-        }
+        
     }
 }

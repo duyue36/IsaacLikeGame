@@ -1,48 +1,39 @@
 fileFormatVersion: 2
-guid: 20410aa4a52ea034eae8210ef5a38a5e
-timeCreated: 1484651897
+guid: b0eaf46f05709a24ab2141e592aeeba2
+timeCreated: 1484653263
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Isaac_downBlink_1
-    21300002: Isaac_downBlink_2
-    21300004: Isaac_rightBlink_1
-    21300006: Isaac_rightBlink_2
-    21300008: Isaac_upBlink_1
-    21300010: Isaac_upBlink_2
-    21300012: Isaac_leftBlink_1
-    21300014: Isaac_leftBlink_2
-    21300016: Isaac_downWalk_1
-    21300018: Isaac_downWalk_2
-    21300020: Isaac_downWalk_3
-    21300022: Isaac_downWalk_4
-    21300024: Isaac_downWalk_5
-    21300026: Isaac_downWalk_6
-    21300028: Isaac_downWalk_7
-    21300030: Isaac_downWalk_8
-    21300032: Isaac_downWalk_9
-    21300034: Isaac_downWalk_10
-    21300036: Isaac_rightWalk_1
-    21300038: Isaac_rightWalk_2
-    21300040: Isaac_rightWalk_3
-    21300042: Isaac_rightWalk_4
-    21300044: Isaac_rightWalk_5
-    21300046: Isaac_rightWalk_6
-    21300048: Isaac_rightWalk_7
-    21300050: Isaac_rightWalk_8
-    21300052: Isaac_rightWalk_9
-    21300054: Isaac_rightWalk_10
-    21300056: Isaac_28
-    21300058: Isaac_29
-    21300060: Isaac_30
-    21300062: Isaac_31
-    21300064: Isaac_32
-    21300066: Isaac_33
-    21300068: Isaac_34
-    21300070: Isaac_35
-    21300072: Isaac_death_1
-    21300074: Isaac_death_2
-    21300076: Isaac_death_3
+    21300000: Isaac_bodypiece_0
+    21300002: Isaac_bodypiece_1
+    21300004: Isaac_bodypiece_2
+    21300006: Isaac_bodypiece_3
+    21300008: Isaac_bodypiece_4
+    21300010: Isaac_bodypiece_5
+    21300012: Isaac_bodypiece_6
+    21300014: Isaac_bodypiece_7
+    21300016: Isaac_bodypiece_8
+    21300018: Isaac_bodypiece_9
+    21300020: Isaac_bodypiece_10
+    21300022: Isaac_bodypiece_11
+    21300024: Isaac_bodypiece_12
+    21300026: Isaac_bodypiece_13
+    21300028: Isaac_bodypiece_14
+    21300030: Isaac_bodypiece_15
+    21300032: Isaac_bodypiece_16
+    21300034: Isaac_bodypiece_17
+    21300036: Isaac_bodypiece_18
+    21300038: Isaac_bodypiece_19
+    21300040: Isaac_leftWalk_1
+    21300042: Isaac_leftWalk_2
+    21300044: Isaac_leftWalk_3
+    21300046: Isaac_leftWalk_4
+    21300048: Isaac_leftWalk_5
+    21300050: Isaac_leftWalk_6
+    21300052: Isaac_leftWalk_7
+    21300054: Isaac_leftWalk_8
+    21300056: Isaac_leftWalk_9
+    21300058: Isaac_leftWalk_10
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -109,245 +100,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Isaac_downBlink_1
+      name: Isaac_bodypiece_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 900
-        width: 28
-        height: 25
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downBlink_2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 899
-        width: 28
-        height: 24
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_rightBlink_1
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 900
-        width: 28
-        height: 25
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_rightBlink_2
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 899
-        width: 28
-        height: 24
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_upBlink_1
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 900
-        width: 28
-        height: 25
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_upBlink_2
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 899
-        width: 28
-        height: 24
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_leftBlink_1
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 900
-        width: 28
-        height: 25
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_leftBlink_2
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 899
-        width: 28
-        height: 24
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 857
-        width: 18
-        height: 13
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_2
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 857
-        width: 18
-        height: 13
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_3
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 857
-        width: 18
-        height: 13
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_4
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 855
-        width: 18
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_5
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 856
-        width: 18
-        height: 14
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_6
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 857
-        width: 18
-        height: 13
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_7
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 857
-        width: 18
-        height: 13
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_8
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 857
-        width: 18
-        height: 13
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_9
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 855
-        width: 18
-        height: 15
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_downWalk_10
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 856
-        width: 18
-        height: 14
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Isaac_rightWalk_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 814
+        x: 8
+        y: 231
         width: 16
         height: 13
       alignment: 1
@@ -356,11 +113,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_2
+      name: Isaac_bodypiece_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 814
+        x: 40
+        y: 231
         width: 15
         height: 13
       alignment: 1
@@ -369,11 +126,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_3
+      name: Isaac_bodypiece_2
       rect:
         serializedVersion: 2
-        x: 79
-        y: 814
+        x: 71
+        y: 231
         width: 16
         height: 13
       alignment: 1
@@ -382,11 +139,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_4
+      name: Isaac_bodypiece_3
       rect:
         serializedVersion: 2
-        x: 111
-        y: 814
+        x: 103
+        y: 231
         width: 17
         height: 14
       alignment: 1
@@ -395,11 +152,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_5
+      name: Isaac_bodypiece_4
       rect:
         serializedVersion: 2
-        x: 143
-        y: 814
+        x: 135
+        y: 231
         width: 17
         height: 13
       alignment: 1
@@ -408,11 +165,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_6
+      name: Isaac_bodypiece_5
       rect:
         serializedVersion: 2
-        x: 176
-        y: 814
+        x: 168
+        y: 231
         width: 15
         height: 13
       alignment: 1
@@ -421,11 +178,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_7
+      name: Isaac_bodypiece_6
       rect:
         serializedVersion: 2
-        x: 208
-        y: 814
+        x: 200
+        y: 231
         width: 15
         height: 13
       alignment: 1
@@ -434,11 +191,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_8
+      name: Isaac_bodypiece_7
       rect:
         serializedVersion: 2
-        x: 239
-        y: 814
+        x: 231
+        y: 231
         width: 18
         height: 13
       alignment: 1
@@ -447,11 +204,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_9
+      name: Isaac_bodypiece_8
       rect:
         serializedVersion: 2
-        x: 271
-        y: 814
+        x: 7
+        y: 199
         width: 18
         height: 14
       alignment: 1
@@ -460,11 +217,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_rightWalk_10
+      name: Isaac_bodypiece_9
       rect:
         serializedVersion: 2
-        x: 303
-        y: 814
+        x: 39
+        y: 199
         width: 18
         height: 13
       alignment: 1
@@ -473,143 +230,260 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_28
+      name: Isaac_bodypiece_10
       rect:
         serializedVersion: 2
-        x: 10
-        y: 751
-        width: 28
-        height: 33
+        x: 7
+        y: 167
+        width: 18
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_29
+      name: Isaac_bodypiece_11
       rect:
         serializedVersion: 2
-        x: 74
-        y: 754
-        width: 28
-        height: 30
+        x: 39
+        y: 167
+        width: 18
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_30
+      name: Isaac_bodypiece_12
       rect:
         serializedVersion: 2
-        x: 138
-        y: 752
-        width: 28
-        height: 33
+        x: 72
+        y: 167
+        width: 18
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_31
+      name: Isaac_bodypiece_13
       rect:
         serializedVersion: 2
-        x: 201
-        y: 753
-        width: 30
-        height: 29
+        x: 103
+        y: 165
+        width: 18
+        height: 15
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_32
+      name: Isaac_bodypiece_14
       rect:
         serializedVersion: 2
-        x: 10
-        y: 688
-        width: 30
-        height: 33
+        x: 135
+        y: 166
+        width: 18
+        height: 14
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_33
+      name: Isaac_bodypiece_15
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 167
+        width: 18
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_bodypiece_16
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 167
+        width: 18
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_bodypiece_17
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 167
+        width: 18
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_bodypiece_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 133
+        width: 18
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_bodypiece_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 134
+        width: 18
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_leftWalk_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 103
+        width: 16
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_leftWalk_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 103
+        width: 15
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_leftWalk_3
       rect:
         serializedVersion: 2
         x: 73
-        y: 688
-        width: 34
-        height: 33
+        y: 103
+        width: 16
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_34
+      name: Isaac_leftWalk_4
       rect:
         serializedVersion: 2
-        x: 138
-        y: 686
-        width: 28
-        height: 30
+        x: 104
+        y: 103
+        width: 17
+        height: 14
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_35
+      name: Isaac_leftWalk_5
       rect:
         serializedVersion: 2
-        x: 202
-        y: 688
-        width: 28
-        height: 31
+        x: 136
+        y: 103
+        width: 17
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_death_1
+      name: Isaac_leftWalk_6
       rect:
         serializedVersion: 2
-        x: 10
-        y: 627
-        width: 28
-        height: 33
+        x: 169
+        y: 103
+        width: 15
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_death_2
+      name: Isaac_leftWalk_7
       rect:
         serializedVersion: 2
-        x: 76
-        y: 629
-        width: 28
-        height: 32
+        x: 201
+        y: 103
+        width: 15
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Isaac_death_3
+      name: Isaac_leftWalk_8
       rect:
         serializedVersion: 2
-        x: 133
-        y: 624
-        width: 36
-        height: 26
+        x: 231
+        y: 103
+        width: 18
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_leftWalk_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 71
+        width: 18
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Isaac_leftWalk_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 71
+        width: 18
+        height: 13
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}

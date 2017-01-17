@@ -19,8 +19,8 @@ public class LarmeController : MonoBehaviour {
     void Start () {
         larme = GetComponent<Rigidbody2D>();
         enemy = GameObject.Find("Enemy1");
-        enemyPos = enemy.transform;
-        enemyCollider = enemy.GetComponent<Collider2D>();
+        //enemyPos = enemy.transform;
+        //enemyCollider = enemy.GetComponent<Collider2D>();
 
         enemyExist = false;
         
@@ -33,7 +33,7 @@ public class LarmeController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         LarmeMove();
-        OnTriggerEnter2D(enemyCollider);
+        //OnTriggerEnter2D(enemyCollider);
     }
 
     void LarmeMove()
@@ -45,21 +45,24 @@ public class LarmeController : MonoBehaviour {
         larmeMovement = larmeMovement.normalized * speed * Time.deltaTime;
 
         
-        //larme.MovePosition(transform.position + larmeMovement);
+        larme.MovePosition(transform.position + larmeMovement);
 
+        /* this a following missile
         if(enemyExist)
             larme.position = Vector3.Lerp(transform.position, enemyPos.position, speed * Time.deltaTime);
         else
             larme.MovePosition(transform.position + larmeMovement);  // Move the player to it's current position plus the movement.
-
+        */
 
 
     }
 
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         enemyExist = true;
-        Debug.Log("enemyExist = " + enemyExist);
+        //Debug.Log("enemyExist = " + enemyExist);
     }
+    */
 
 }
