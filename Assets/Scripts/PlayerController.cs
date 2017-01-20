@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 [System.Serializable]
 public class Boundary
@@ -8,64 +10,191 @@ public class Boundary
     public float xMin, xMax, yMin, yMax;
 }
 
-public class PlayerController : MonoBehaviour {    //hi, can you see the change that I make it here?
-    public float speed;
-    private Rigidbody2D player;
-    private Vector3 larmeMovement;
-    public Boundary boundary;
+public enum BULLETDIR
+{
+    LEFTSHOOT,
+    RIGHTSHOOT,
+    UPSHOOT,
+    DOWNSHOOT
+}
+namespace Globalspace
+{
+   
+    public class PlayerController : MonoBehaviour
+    {    
+        public static BULLETDIR bulletDir;
+        public static bool inBiggerMode;
+        public static bool inTrackMode;
+        public static Transform enemyPos;
+        public static float playerBulletSpeed;
+        public static float bulletDamage;
 
-    public GameObject larme;
-    public Transform larmeSpawn;
-    //private Rigidbody2D larmeRigidbody;
+        private Rigidbody2D player;
+        private Vector3 larmeMovement;
+        public Boundary boundary;
 
-    public float fireRate;
-    private float nextFire;
+        public GameObject larme;
+        public Transform larmeSpawn;
+        public Transform enemyPosition;
 
-    private bool rightTurn;
-    private Vector3 offsetLarmePosition;  //to control it's right larme or left larme
+        //private Rigidbody2D larmeRigidbody;
 
-    // Use this for initialization
-    void Start () {
-        player = GetComponent<Rigidbody2D>();
+        public Toggle normal;
+        public Toggle greater;
+        public Toggle tracer;
 
-        rightTurn = true;
-        offsetLarmePosition.Set(0.0f, 0.3f, 0.0f);
+        public Slider speedSlider;      // 0 ~ 20
+        public Slider fireRateSlider;   // 0 ~ 1
+        public Slider bulletSpeedSlider;// 0 ~ 20
+        public Slider damageSlider;     // 0 ~ 20
 
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        private float speed;
+        private float fireRate;
+        private float nextFire;
+
+        private bool rightTurn;
+        private Vector3 offsetLarmePositionY;  //to control it's right larme or left larme
+        private Vector3 offsetLarmePositionX;
+
+        
+
+
+        // Use this for initialization
+
+        void Start()
         {
-            nextFire = Time.time + fireRate;
-            //Debug.Log("Time.time = " + Time.time);
+            speed = speedSlider.value;
+            fireRate = fireRateSlider.value;
+            playerBulletSpeed = bulletSpeedSlider.value;
+            bulletDamage = damageSlider.value;
 
-            if (rightTurn == true)
-                Instantiate(larme, larmeSpawn.position + offsetLarmePosition, larmeSpawn.rotation);
-            else
-                Instantiate(larme, larmeSpawn.position - offsetLarmePosition, larmeSpawn.rotation);
+            player = GetComponent<Rigidbody2D>();
+            enemyPos = enemyPosition;
 
-            rightTurn = !rightTurn;
+            rightTurn = true;
+            offsetLarmePositionY.Set(0.0f, 0.3f, 0.0f);
+            offsetLarmePositionX.Set(0.3f, 0.0f, 0.0f);
 
         }
 
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                bulletDir = BULLETDIR.UPSHOOT;
+                if (rightTurn == true)
+                    Instantiate(larme, larmeSpawn.position + offsetLarmePositionX, larmeSpawn.rotation);
+                else
+                    Instantiate(larme, larmeSpawn.position - offsetLarmePositionX, larmeSpawn.rotation);
+
+                rightTurn = !rightTurn;
+            }
+            if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                bulletDir = BULLETDIR.DOWNSHOOT;
+                if (rightTurn == true)
+                    Instantiate(larme, larmeSpawn.position + offsetLarmePositionX, larmeSpawn.rotation);
+                else
+                    Instantiate(larme, larmeSpawn.position - offsetLarmePositionX, larmeSpawn.rotation);
+
+                rightTurn = !rightTurn;
+            }
+            if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                bulletDir = BULLETDIR.LEFTSHOOT;
+                if (rightTurn == true)
+                    Instantiate(larme, larmeSpawn.position + offsetLarmePositionY, larmeSpawn.rotation);
+                else
+                    Instantiate(larme, larmeSpawn.position - offsetLarmePositionY, larmeSpawn.rotation);
+
+                rightTurn = !rightTurn;
+            }
+
+            if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                bulletDir = BULLETDIR.RIGHTSHOOT;
+                if (rightTurn == true)
+                    Instantiate(larme, larmeSpawn.position + offsetLarmePositionY, larmeSpawn.rotation);
+                else
+                    Instantiate(larme, larmeSpawn.position - offsetLarmePositionY, larmeSpawn.rotation);
+
+                rightTurn = !rightTurn;
+            }
+
+            speed = speedSlider.value;
+            fireRate = fireRateSlider.value;
+            playerBulletSpeed = bulletSpeedSlider.value;
+            bulletDamage = damageSlider.value;
+
+            /*
+            if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                //Debug.Log("Time.time = " + Time.time);
+
+                if (rightTurn == true)
+                    Instantiate(larme, larmeSpawn.position + offsetLarmePositionY, larmeSpawn.rotation);
+                else
+                    Instantiate(larme, larmeSpawn.position - offsetLarmePositionY, larmeSpawn.rotation);
+
+                rightTurn = !rightTurn;
+
+            }
+            */
+
+        }
+
+        void FixedUpdate()
+        {
+            float moveHorizontal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
+
+            Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
+            player.velocity = movement * speed;
+            //player.position = transform.position + movement;
+            player.position = new Vector3
+            (
+                Mathf.Clamp(player.position.x, boundary.xMin, boundary.xMax),
+                Mathf.Clamp(player.position.y, boundary.yMin, boundary.yMax),
+                0.0f
+             );
+        }
+
+        public void Toggle_Changed_Normal(bool newValue)
+        {
+            if (newValue)
+            {
+                inBiggerMode = false;
+                inTrackMode = false;
+            }
+        }
+
+        public void Toggle_Changed_Greater(bool newValue)
+        {
+            if (newValue)
+            {
+                inBiggerMode = true;
+                inTrackMode = false;
+            }
+
+        }
+
+        public void Toggle_Changed_Tracer(bool newValue)
+        {
+            if (newValue)
+            {
+                inBiggerMode = false;
+                inTrackMode = true;
+            }
+
+        }
+
+
     }
-
-    void FixedUpdate()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
-        player.velocity = movement * speed;
-        //player.position = transform.position + movement;
-        player.position = new Vector3
-        (
-            Mathf.Clamp(player.position.x, boundary.xMin, boundary.xMax),
-            Mathf.Clamp(player.position.y, boundary.yMin, boundary.yMax),
-            0.0f
-         );
-    }
-
-   
 }
+
