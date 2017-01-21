@@ -45,7 +45,7 @@ public class LarmeController : MonoBehaviour {
         BULLETDIR bulletDirction = PlayerController.bulletDir;
 
 
-        switch (bulletDirction)
+        switch (bulletDirction)             // to set the bullet direction
         {
             case BULLETDIR.UPSHOOT:
                 MoveUp();
@@ -103,9 +103,9 @@ public class LarmeController : MonoBehaviour {
 
     }
 
-    void MoveRight()
+    void MoveRight()   // set velocity of bullet to bulletSpeed and face right
     {
-        Vector2 goRight = new Vector2(1, 0);
+        Vector2 goRight = new Vector2(1, 0);   
         larme.velocity = goRight * bulletSpeed;
 
        

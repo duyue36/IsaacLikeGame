@@ -35,7 +35,7 @@ public class EnemyTracerController : MonoBehaviour {
     }
 
 
-    void TrackMode()
+    void TrackMode()                     //this function will move from a start position to the end position gradually
     {
         float distCovered = (Time.time - startTime) * speed;
         float fracJourney = distCovered / journeyLength;

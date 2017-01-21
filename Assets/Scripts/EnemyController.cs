@@ -5,18 +5,18 @@ using UnityEngine;
 
 
 public class EnemyController : MonoBehaviour {
-    public float speed;
-    public float movingPeriod;// if enemy start to move, it will moving 2 seconds
-    public Boundary boundary;
+    public float speed;          //the moving speed of the enemy
+    public float movingPeriod;   // if enemy start to move, it will moving 2 seconds
+    public Boundary boundary;     //set a boundary for the enemy
 
     Rigidbody2D enemyRigidbody;
     Vector2 movement;
-    Vector2 zero;
+    Vector2 zero;   //means (0,0) in coordinate axis
 
     private Animator n_animator;
     private float itsThinkPeriod = 3f;   //every 3 seconds, Ai will make a decistion
-    private float thinkTimeLeft;
-    private float movingTimeLeft;  
+    private float thinkTimeLeft;         // during this period, Ai will not make a decision   
+    private float movingTimeLeft;        // druing this period, Ai will move.
 
     bool iWantToMove;            // if true Ai will move
     bool inMoving = false;
@@ -53,9 +53,9 @@ public class EnemyController : MonoBehaviour {
             } 
         }
 
-        if (movingTimeLeft <= 0)
+        if (movingTimeLeft <= 0)         // when the enemy should still staic
         {
-            enemyRigidbody.velocity = zero;
+            enemyRigidbody.velocity = zero;  // speed should equal to 0
             inMoving = false;
             movingTimeLeft = movingPeriod;    //after x s, reset movingTimeLeft to x s.
         }
@@ -78,7 +78,7 @@ public class EnemyController : MonoBehaviour {
        
     }
 
-    void decideDirection()
+    void decideDirection()           //decide which direction to face
     {
         enemyRigidbody.velocity = zero;
         float randomValue = Random.Range(0.0f, 1.0f);
